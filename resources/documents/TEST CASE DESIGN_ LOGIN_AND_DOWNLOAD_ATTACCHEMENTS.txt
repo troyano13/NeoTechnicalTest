@@ -1,0 +1,45 @@
+﻿TEST CASE DESIGN: PROCESS AND LABEL EMAILS, DOWNLOAD ATTACHMENTS, AND LOG OUT
+____________________________________________________________________________
+
+
+
+
+Test Case Name: Successful User Login
+Id:1
+Created by: Alexadra Tr
+Executed by: Alexandra Tr
+Environment: QA automater
+Preconditions:
+* The bot has access to the email account with the correct credentials.
+* The bot is logged into the email page using valid credentials ("<email>" and "<password>").
+* The email inbox contains unread emails with subjects "Neostella" and "-Neostella".
+* User have accunt  the homepage https://mail.google.com/mail/
+
+
+Test Steps:
+
+
+1. Given the bot is logged into the email page with "<email>" and "<password>".
+2. And the bot logs in correctly.
+3. When the bot retrieves emails with the subject "Neostella".
+4. And it labels those emails as "processing".
+5. And the bot retrieves emails with the subject "-Neostella".
+6. And it labels those emails as "exceptions".
+7. Then the bot downloads the unread documents from the "processing" emails.
+8. And saves the attachments to a shared folder with the current date.
+9. And verifies that the inbox has no incoming emails with the subject "Neostella".
+10. And the bot finishes by logging out.
+
+
+
+
+Expected Results:
+* The bot successfully retrieves the emails with the subject "Neostella" and labels them as "processing".
+* The bot successfully retrieves the emails with the subject "-Neostella" and labels them as "exceptions".
+* The unread documents from the "processing" emails are downloaded and saved in a shared folder with the current date.
+* There are no remaining incoming emails with the subject "Neostella" in the inbox.
+* The bot successfully logs out of the email account
+
+
+General Post-conditions: N/A
+________________
