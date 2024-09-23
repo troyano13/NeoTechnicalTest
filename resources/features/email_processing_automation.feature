@@ -16,5 +16,5 @@ Feature: Email Processing
     And verifies that the inbox has no incoming emails "Neostella"
     And the bot finishes by logging out
     Examples:
-      | email                     | password    |
+      | email           | password |
       | est.XXXXXXXX.co | X1XXXXX@ |
