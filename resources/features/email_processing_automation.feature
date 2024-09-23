@@ -17,4 +17,4 @@ Feature: Email Processing
     And the bot finishes by logging out
     Examples:
       | email                     | password    |
-      | est.atroyano@smart.edu.co | Candado315@ |
+      | est.XXXXXXXX.co | X1XXXXX@ |
